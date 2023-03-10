@@ -83,7 +83,7 @@ h1 {
 
 .tab-item:hover .tab-icon,
 .tab-item input:checked+label>.tab-icon {
-    transform: rotate(45deg);
+    background-size: 50% 0.1rem, 0rem 50%;
     transition: transform .5s ease;
 }
 
