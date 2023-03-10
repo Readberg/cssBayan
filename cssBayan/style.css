@@ -42,12 +42,8 @@ h1 {
     overflow: hidden;
 }
 
-.tab-item input[name='tab-radio'] + .tab-content {
-    height: 0;
-    overflow: hidden;
-}
-
+.tab-item input[name='tab-radio']:checked ~ .tab-content,
 .tab-item label:hover + .tab-content {
-    overflow: auto;
     height: 5em;
+    overflow: auto;
 }
