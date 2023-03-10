@@ -99,6 +99,31 @@ h1 {
     transition: opacity .5s ease;
 }
 
+@media screen and (max-width: 51.25rem) {
+    .wrapper {  
+        padding: 0 2rem;
+    }
+
+    .tab-input:checked~.tab-content img,
+    .tab-item label:hover+.tab-content img {
+        height: 18rem;
+    }
+
+    .tab-icon {
+        opacity: 1;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .tab-item label {
+        font-size: 0.95rem;
+    }
+}
+
 @media screen and (max-width: 20rem) {
     .wrapper {  
         padding: 0 1rem;
@@ -110,7 +135,6 @@ h1 {
     }
 
     .tab-icon {
-        opacity: 1;
         width: 2.5rem;
         height: 2.5rem;
     }
