@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-    max-width: 58.75;
+    max-width: 58.75rem;
     padding: 0 2.5%;
     margin: 0 auto;
 }
@@ -77,18 +77,11 @@ h1 {
     overflow: auto;
 }
 
-.tab-list:hover .tab-icon {
-    opacity: 1;
-    transition: all .5s ease;
-}
-
-.tab-item:hover .tab-icon,
 .tab-item input:checked+label>.tab-icon {
     background-size: 50% 0.1rem, 0rem 50%;
     transition: transform .5s ease;
 }
 
-.tab-list:hover .tab-item label,
 .tab-item input:checked+label {
     color: #000;
     transition: transform .5s ease;
@@ -99,6 +92,21 @@ h1 {
     transition: opacity .5s ease;
 }
 
+@media screen and (min-width: 120rem) {
+    .tab-list:hover .tab-icon {
+        opacity: 1;
+        transition: all .5s ease;
+    }
+    .tab-item:hover .tab-icon {
+        background-size: 50% 0.1rem, 0rem 50%;
+    transition: transform .5s ease;
+    }
+    .tab-list:hover .tab-item label {
+        color: #000;
+        transition: transform .5s ease;
+    }
+}
+
 @media screen and (max-width: 51.25rem) {
     .wrapper {  
         padding: 0 2rem;
@@ -106,7 +114,7 @@ h1 {
 
     .tab-input:checked~.tab-content img,
     .tab-item label:hover+.tab-content img {
-        height: 18rem;
+        height: 15rem;
     }
 
     .tab-icon {
