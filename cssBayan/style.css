@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-    max-width: 55%;
+    max-width: 58.75;
     padding: 0 2.5%;
     margin: 0 auto;
 }
@@ -16,6 +16,7 @@ h1 {
     font-size: 3rem;
     padding: 2%;
     font-weight: 600;
+    color: royalblue;
 }
 
 .tab-item {
@@ -96,4 +97,29 @@ h1 {
 .tab-item:active {
     opacity: .5;
     transition: opacity .5s ease;
+}
+
+@media screen and (max-width: 20rem) {
+    .wrapper {  
+        padding: 0 1rem;
+    }
+
+    .tab-input:checked~.tab-content img,
+    .tab-item label:hover+.tab-content img {
+        height: 12rem;
+    }
+
+    .tab-icon {
+        opacity: 1;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tab-item label {
+        font-size: 0.85rem;
+    }
 }
