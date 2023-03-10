@@ -35,15 +35,19 @@ h1 {
 }
 
 .tab-content {
-    display: block;
+    display: flex;
     width: 100%;
-    transition: height 1s ease;
-    height: 0;
-    overflow: hidden;
 }
 
-.tab-item input[name='tab-radio']:checked ~ .tab-content,
-.tab-item label:hover + .tab-content {
-    height: 5em;
+.tab-content img{
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease;
+    margin: 0 auto;
+}
+
+.tab-item input[name='tab-radio']:checked ~ .tab-content img,
+.tab-item label:hover + .tab-content img{
+    height: 20em;
     overflow: auto;
 }
