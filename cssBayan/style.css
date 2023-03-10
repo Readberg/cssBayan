@@ -20,7 +20,7 @@ h1 {
 
 .tab-item {
     border-top: 0.1rem solid gray;
-    padding: 1% 3%;
+    padding: 0 3%;
 }
 
 .tab-item input {
@@ -48,7 +48,8 @@ h1 {
     background-position: center;
     background-size: 50% 0.1rem, 0.1rem 50%;
     background-repeat: no-repeat;
-    transition: opacity .5s ease;
+    transition: opacity .5s ease-in-out;
+    transition: transform .3s ease;
 }
 
 .tab-content {
@@ -63,11 +64,19 @@ h1 {
     margin: 0 auto;
 }
 
-.tab-item input[name='tab-radio']:checked~.tab-content img,
+.tab-input:checked~.tab-content img,
 .tab-item label:hover+.tab-content img {
     height: 20rem;
     overflow: auto;
 }
 .tab-list:hover .tab-icon{
     opacity: 1;
+}
+.tab-item:hover .tab-icon {
+    transform: rotate(45deg);
+    transition: transform .3s ease;
+}
+.tab-item input:checked + label > .tab-icon {
+    transform: rotate(45deg);
+    transition: transform .3s ease;
 }
