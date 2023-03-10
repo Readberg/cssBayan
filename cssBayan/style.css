@@ -1,7 +1,7 @@
 @import url(reset.css);
 
 body {
-    font-family:'Arial';
+    font-family: 'Arial';
     font-size: 1rem;
     line-height: 140%;
 }
@@ -37,8 +37,18 @@ h1 {
 }
 
 .tab-icon {
-    height: 1.5rem;
-    display: none;
+    opacity: 0;
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    background:
+        linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0);
+    background-position: center;
+    background-size: 50% 0.1rem, 0.1rem 50%;
+    background-repeat: no-repeat;
+    transition: opacity .5s ease;
 }
 
 .tab-content {
@@ -46,15 +56,18 @@ h1 {
     width: 100%;
 }
 
-.tab-content img{
+.tab-content img {
     height: 0;
     overflow: hidden;
     transition: height 1s ease;
     margin: 0 auto;
 }
 
-.tab-item input[name='tab-radio']:checked ~ .tab-content img,
-.tab-item label:hover + .tab-content img{
+.tab-item input[name='tab-radio']:checked~.tab-content img,
+.tab-item label:hover+.tab-content img {
     height: 20rem;
     overflow: auto;
+}
+.tab-list:hover .tab-icon{
+    opacity: 1;
 }
