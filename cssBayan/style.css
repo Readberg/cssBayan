@@ -18,8 +18,17 @@ body {
 
 .wrapper {
     max-width: 58.75rem;
-    padding: 0 2.5%;
+    padding: 1% 2.5%;
     margin: 0 auto;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    max-width: 15rem;
+    background: var(--primary-color);
+    border-radius: 2rem;
 }
 
 h1 {
