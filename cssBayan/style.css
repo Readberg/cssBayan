@@ -12,7 +12,7 @@ body {
     font-family: 'Bakbak One', cursive;
     font-size: 1rem;
     line-height: 140%;
-    background: var(--semi-dark-color);
+    background: var(--dark-color);
 }
 
 .wrapper {
@@ -21,11 +21,16 @@ body {
     margin: 0 auto;
 }
 
+.bg-img {
+    max-width: 58.75rem;
+}
+
 h1 {
     font-size: 3rem;
     padding: 2%;
     font-weight: 600;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    text-align: center;
 }
 
 .tab-list {
