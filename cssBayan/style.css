@@ -147,6 +147,7 @@ h1 {
     .tab-input:checked~.tab-content img,
     .tab-item label:hover+.tab-content img {
         height: 15rem;
+        padding: 1rem;
     }
 
     .tab-icon {
@@ -172,6 +173,7 @@ h1 {
     .tab-input:checked~.tab-content img,
     .tab-item label:hover+.tab-content img {
         height: 12rem;
+        padding: 1rem;
     }
 
     .tab-icon {
